@@ -3,7 +3,7 @@ import Button from "../ui/button";
 
 const Hero = () => {
   return (
-    <section className="w-full">
+    <section>
       <div className="max-w-xl">
         <Image src="/images/logo.png" alt="Logo" width={160} height={85} />
         <h2 className="mt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white">

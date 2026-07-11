@@ -6,7 +6,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 const baseStyles =
-  "px-8 py-5 text-xl rounded-bl-2xl rounded-tr-2xl font-semibold bg-(--color-green) text-(--button-text-color) hover:bg-(--color-green)/80 focus:outline-none";
+  "px-8 py-5 text-xl border border-(--color-green) rounded-bl-2xl rounded-tr-2xl font-semibold bg-(--color-green) text-(--button-text-color) hover:bg-(--color-green)/80 focus:outline-none";
 
 const Button = (props: ButtonProps) => {
   const {
@@ -16,6 +16,7 @@ const Button = (props: ButtonProps) => {
     fullWidth,
     isDisabled,
     disabled,
+    variant,
     children,
     ...rest
   } = props;
@@ -27,6 +28,9 @@ const Button = (props: ButtonProps) => {
         isDisabled ? "opacity-50 cursor-not-allowed" : "",
         fullWidth ? "w-full" : "",
         rounded ? "rounded-full!" : "",
+        variant === "secondary"
+          ? "bg-transparent text-(--color-foreground) hover:bg-foreground/10"
+          : "",
         className,
       ]
         .filter(Boolean)
