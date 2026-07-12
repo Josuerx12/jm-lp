@@ -12,12 +12,18 @@
   --color-foreground: var(--foreground);
   --color-green: var(--green);
   --button-text-color: var(--button-text-color);
+  --color-green-system: var(--green);
+  --color-primary: #ffffff;
+  --color-secondary: #0e0e0e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: linear-gradient(180deg, #060606 0%, #0b0b0b 100%);
     --foreground: #ffffff;
+    --color-green-system: var(--green);
+    --color-primary: #ffffff;
+    --color-secondary: #0e0e0e;
   }
 }
 
@@ -37,10 +43,13 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 section {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
-  padding: 8rem 0;
 }
 
 hr {

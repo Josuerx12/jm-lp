@@ -1,5 +1,6 @@
-import { ChessRook } from "lucide-react";
+import { Check } from "lucide-react";
 import Image from "next/image";
+
 import Button from "../ui/button";
 
 const contents = [
@@ -9,10 +10,37 @@ const contents = [
   "Estruturação de projetos políticos",
 ];
 
+const activities = [
+  {
+    title: "Planejamento estratégico de campanha",
+    description:
+      "Definição de posicionamento, públicos prioritários e direção eleitoral.",
+  },
+  {
+    title: "Posicionamento e identidade política",
+    description:
+      "Clareza sobre quem você é, o que defende e como será percebido.",
+  },
+  {
+    title: "Estratégia de comunicação política",
+    description: "Organização do discurso, narrativa e presença pública.",
+  },
+  {
+    title: "Estratégia digital e conteúdo",
+    description:
+      "Planejamento da presença online com foco em construção de autoridade e conexão com o eleitor.",
+  },
+  {
+    title: "Estruturação de pré-campanha",
+    description:
+      "Construção de reputação, visibilidade e base antes da disputa começar.",
+  },
+];
+
 const About = () => {
   return (
     <section className="relative">
-      <div className="absolute -top-14 -left-80">
+      <div className="absolute -top-14 -left-64">
         <Image
           src="/images/elements/peca.png"
           alt="peça de xadrez"
@@ -23,7 +51,7 @@ const About = () => {
         />
       </div>
 
-      <div>
+      <div className="py-32">
         <h3 className="max-w-md text-lg sm:text-xl md:text-3xl lg:text-4xl text-white">
           Quem é Jônatas Manhães
         </h3>
@@ -34,7 +62,7 @@ const About = () => {
           com:
         </p>
 
-        <div className="max-w-[550px] mt-6 grid grid-cols-2 gap-4">
+        <div className="max-w-137.5 mt-6 grid grid-cols-2 gap-4">
           {contents.map((content) => (
             <Button
               className="rounded-full! px-4! py-2! text-sm! text-(--color-green)!"
@@ -74,10 +102,16 @@ const About = () => {
       <br />
 
       <div className="flex items-start gap-10">
-        <div className="w-full rounded max-w-md md:min-h-125 flex justify-center items-center bg-linear-90 from-[#080808] to-[#171717] border border-[#1C1C1C] p-10">
+        <div className="w-full relative rounded max-w-md md:min-h-125 flex justify-center items-center bg-linear-to-r to-[#080808] from-[#171717] border border-[#1C1C1C] p-10">
+          <div className="absolute -top-4 left-10 w-28 h-9 bg-(--color-green) rounded shadow-[0_0_2px_var(--color-green),0_0_8px_var(--color-green),0_0_20px_var(--color-green)]" />
           <div className="flex items-start h-full gap-4">
             <div className="flex flex-col gap-4">
-              <ChessRook className="items-start" />
+              <Image
+                src="/images/elements/torre.png"
+                alt="Torre"
+                width={41}
+                height={41}
+              />
               <p className="font-semibold text-(--color-green) text-lg md:text-xl lg:text-2xl">
                 Consultoria em estratégia política e eleitoral
               </p>
@@ -89,6 +123,28 @@ const About = () => {
               </p>
             </div>
           </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full pb-32">
+          {activities.map((activity) => (
+            <div
+              key={activity.title}
+              className="relative rounded max-w-md flex justify-center items-center bg-linear-to-r to-[#080808] from-[#171717] border border-[#1C1C1C] p-10"
+            >
+              <div className="flex items-start h-full gap-4">
+                <div className="flex flex-col gap-4">
+                  <div className="w-6 h-6 flex justify-center items-center rounded-full border border-(--color-green)">
+                    <Check size={12} />
+                  </div>
+                  <p className="font-semibold text-(--color-green) text-lg lg:text-xl">
+                    {activity.title}
+                  </p>
+
+                  <p className="lg:text-lg">{activity.description}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

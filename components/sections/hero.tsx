@@ -4,7 +4,7 @@ import Button from "../ui/button";
 const Hero = () => {
   return (
     <section>
-      <div className="max-w-xl">
+      <div className="max-w-xl py-32">
         <Image src="/images/logo.png" alt="Logo" width={160} height={85} />
         <h2 className="mt-8 text-3xl sm:text-4xl md:text-5xl font-bold text-white">
           <span className="text-(--color-green)">

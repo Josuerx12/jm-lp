@@ -62,7 +62,7 @@ const Strategy = () => {
           <br />É o que separa quem participa de quem disputa de verdade.
         </p>
       </div>
-      <div className="absolute bottom-10 -right-80">
+      <div className="absolute bottom-10 -right-72">
         <Image
           src="/images/elements/peca.png"
           alt="peça de xadrez"
