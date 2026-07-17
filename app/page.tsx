@@ -1,6 +1,8 @@
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 
 import About from "@/components/sections/about";
+import Cases from "@/components/sections/cases";
 import Hero from "@/components/sections/hero";
 import Process from "@/components/sections/process";
 import Results from "@/components/sections/results";
@@ -20,7 +22,7 @@ export default function Home() {
       </div>
       <div
         id="process"
-        className="relative rounded-[32px] py-20 md:rounded-[81px] md:py-32 bg-green-system"
+        className="relative rounded-4xl py-20 md:rounded-[81px] md:py-32 bg-green-system"
       >
         <a
           href="#process"
@@ -38,6 +40,19 @@ export default function Home() {
         <Process />
       </div>
       <Results />
+      <div
+        id="cases"
+        className="relative overflow-hidden rounded-4xl bg-[#f4f4f4]  md:rounded-[81px] md:py-28"
+      >
+        <Cases />
+        <Image
+          src="/images/elements/peca.png"
+          alt="Peça de xadrez"
+          width={394}
+          height={703}
+          className="pointer-events-none absolute -bottom-20 -left-24 z-10 hidden h-auto w-72 rotate-20 lg:block"
+        />
+      </div>
     </main>
   );
 }
