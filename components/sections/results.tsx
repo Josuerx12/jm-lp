@@ -1,4 +1,4 @@
-/** biome-ignore-all lint/security/noDangerouslySetInnerHtml: <explanation> */
+/** biome-ignore-all lint/security/noDangerouslySetInnerHtml: content is static and defined in this file */
 import Image from "next/image";
 
 const data = [
@@ -18,21 +18,22 @@ const data = [
 
 const Results = () => {
   return (
-    <section className="text-center py-32">
-      <h2 className="text-[40px] font-bold text-white">
+    <section className="text-center py-20 md:py-32">
+      <h2 className="text-3xl leading-tight sm:text-[40px] font-bold text-white">
         Resultados não são discurso.
-        <br />
+        <br className="hidden sm:block" />
         São construção.
       </h2>
-      <p className="text-2xl text-white">
-        Experiência prática em campanhas e <br /> projetos políticos.
+      <p className="mt-4 text-lg sm:text-2xl text-white">
+        Experiência prática em campanhas e <br className="hidden sm:block" />
+        projetos políticos.
       </p>
 
-      <div className="flex justify-between gap-6 *:flex-wrap my-16">
+      <div className="flex flex-col justify-between gap-4 sm:gap-6 my-12 md:my-16 lg:flex-row">
         {data.map((item) => (
           <div
             key={item.text}
-            className="flex flex-col min-h-83.75 md:min-w-101.75 rounded-[50px] items-start justify-center gap-6 w-full p-10 bg-[#121212]"
+            className="flex flex-col min-h-64 lg:min-h-83.75 rounded-[32px] sm:rounded-[50px] items-start justify-center gap-6 w-full p-6 sm:p-10 bg-[#121212]"
           >
             <div className="flex justify-center items-center w-20 h-20 rounded-full bg-green-system shadow-[0_0_2px_var(--color-green),0_0_8px_var(--color-green),0_0_20px_var(--color-green)]">
               <Image

@@ -1,4 +1,5 @@
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "secondary" | "outline";
   rounded?: boolean;
   fullWidth?: boolean;
@@ -6,7 +7,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 }
 
 const baseStyles =
-  "px-8 py-5 text-xl border border-(--color-green) rounded-bl-2xl rounded-tr-2xl font-semibold bg-(--color-green) text-(--button-text-color) hover:bg-(--color-green)/80 focus:outline-none";
+  "min-h-12 px-5 py-3.5 text-base sm:px-8 sm:py-5 sm:text-xl border border-(--color-green) rounded-bl-2xl rounded-tr-2xl font-semibold bg-(--color-green) text-(--button-text-color) hover:bg-(--color-green)/80 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-(--color-green)";
 
 const Button = (props: ButtonProps) => {
   const {

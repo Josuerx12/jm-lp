@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Bai_Jamjuree, Bakbak_One, Geist, Geist_Mono } from "next/font/google";
+import { Bai_Jamjuree, Bakbak_One } from "next/font/google";
 import "./globals.css";
 
 const bakbaOne = Bakbak_One({
