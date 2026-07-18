@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import About from "@/components/sections/about";
 import Cases from "@/components/sections/cases";
+import Ebooks from "@/components/sections/ebooks";
 import Hero from "@/components/sections/hero";
 import Process from "@/components/sections/process";
 import Results from "@/components/sections/results";
@@ -53,6 +54,13 @@ export default function Home() {
           className="pointer-events-none absolute -bottom-20 -left-24 z-10 hidden h-auto w-72 rotate-20 lg:block"
         />
       </div>
+      <div
+        id="ebooks"
+        className="bg-[radial-gradient(circle_at_50%_30%,#111_0%,#080808_48%,#060606_100%)]"
+      >
+        <Ebooks />
+      </div>
+      <div></div>
     </main>
   );
 }
