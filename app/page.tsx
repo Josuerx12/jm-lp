@@ -2,8 +2,11 @@ import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 import About from "@/components/sections/about";
+import Articles from "@/components/sections/articles";
 import Cases from "@/components/sections/cases";
+import Diagnosis from "@/components/sections/diagnosis";
 import Ebooks from "@/components/sections/ebooks";
+import Footer from "@/components/sections/footer";
 import Hero from "@/components/sections/hero";
 import Process from "@/components/sections/process";
 import Results from "@/components/sections/results";
@@ -12,13 +15,13 @@ import Strategy from "@/components/sections/strategy";
 export default function Home() {
   return (
     <main>
-      <div className="min-h-screen bg-[url('/images/bg/bg1.png')] bg-cover bg-no-repeat bg-center">
+      <div className="min-h-screen bg-[url('/images/bg/bg1-mobile.png')] lg:bg-[url('/images/bg/bg1.png')] bg-cover bg-no-repeat bg-center">
         <Hero />
       </div>
       <div className="min-h-screen py-20 md:py-32 bg-linear-to-b from-[#060606] to-[#0B0B0B]">
         <Strategy />
       </div>
-      <div className="min-h-screen bg-[url('/images/bg/bg2.png')] bg-cover bg-no-repeat bg-center">
+      <div className="min-h-screen bg-[url('/images/bg/bg-2-3-mobile.png')] lg:bg-[url('/images/bg/bg2.png')] bg-cover bg-no-repeat bg-center">
         <About />
       </div>
       <div
@@ -60,7 +63,16 @@ export default function Home() {
       >
         <Ebooks />
       </div>
-      <div></div>
+      <div
+        id="diagnosis"
+        className="bg-[#071008] bg-[url('/images/bg/bg3.png')] bg-cover bg-[position:30%_center] bg-no-repeat lg:bg-[length:1920px_1546px] lg:bg-center"
+      >
+        <Diagnosis />
+      </div>
+      <div id="articles" className="bg-[#f4f4f4]">
+        <Articles />
+      </div>
+      <Footer />
     </main>
   );
 }
