@@ -66,11 +66,11 @@ const Cases = () => {
     <section className="relative py-20 text-secondary">
       <div className="grid items-start gap-12 lg:grid-cols-[300px_minmax(0,1fr)] lg:gap-12 xl:grid-cols-[348px_minmax(0,1fr)] xl:gap-16">
         <div className="relative z-20">
-          <span className="inline-flex min-w-24 justify-center rounded-full bg-secondary px-5 py-1.5 text-[11px] font-semibold tracking-[0.18em] text-green-system">
+          <span className="inline-flex min-w-24 justify-center rounded-full bg-secondary px-5 py-1.5 text-xs font-semibold tracking-[0.18em] text-green-system">
             CASES
           </span>
 
-          <h2 className="mt-5 max-w-88 text-3xl leading-[1.08] font-bold sm:text-[38px]">
+          <h2 className="mt-5 max-w-88 text-2xl leading-[1.08] font-bold sm:text-[38px]">
             Estratégia aplicada em{" "}
             <span className="bg-green-system px-1 leading-tight">
               campanhas reais
@@ -109,7 +109,7 @@ const Cases = () => {
                     <h3 className="mt-6 text-lg leading-tight font-semibold">
                       {item.title}
                     </h3>
-                    <p className="mt-3 line-clamp-8 text-[13px] leading-tight">
+                    <p className="mt-3 line-clamp-8 text-sm leading-snug">
                       {item.description}
                     </p>
                     <a

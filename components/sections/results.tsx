@@ -19,12 +19,12 @@ const data = [
 const Results = () => {
   return (
     <section className="text-center py-20 md:py-32">
-      <h2 className="text-3xl leading-tight sm:text-[40px] font-bold text-white">
+      <h2 className="text-2xl leading-tight sm:text-[40px] font-bold text-white">
         Resultados não são discurso.
         <br className="hidden sm:block" />
         São construção.
       </h2>
-      <p className="mt-4 text-lg sm:text-2xl text-white">
+      <p className="mt-4 text-base sm:text-2xl text-white">
         Experiência prática em campanhas e <br className="hidden sm:block" />
         projetos políticos.
       </p>
@@ -44,17 +44,17 @@ const Results = () => {
               />
             </div>
             <p
-              className="text-lg md:text-xl text-white text-start"
+              className="text-base md:text-xl text-white text-start"
               dangerouslySetInnerHTML={{ __html: item.text }}
             />
           </div>
         ))}
       </div>
 
-      <p className="text-lg md:text-xl text-white">
+      <p className="text-base md:text-xl text-white">
         O que diferencia uma campanha não é o volume de conteúdo.
       </p>
-      <b className="text-lg md:text-xl">É a estratégia por trás dele.</b>
+      <b className="text-base md:text-xl">É a estratégia por trás dele.</b>
     </section>
   );
 };

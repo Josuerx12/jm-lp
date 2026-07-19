@@ -19,11 +19,11 @@ const Strategy = () => {
           Política não se vence com intenção. <br className="hidden sm:block" />
           <span className="text-(--color-green)">Se vence com estrutura.</span>
         </h2>
-        <p className="max-w-2xl text-lg sm:text-xl md:text-2xl text-white">
+        <p className="max-w-2xl text-base sm:text-xl md:text-2xl text-white">
           A maioria dos projetos políticos não fracassa por falta de vontade.
           Fracassa por falta de direção.
         </p>
-        <p className="max-w-2xl text-md sm:text-lg md:text-xl text-white">
+        <p className="max-w-2xl text-base sm:text-lg md:text-xl text-white">
           Sem estratégia, o que acontece é previsível:
         </p>
       </div>

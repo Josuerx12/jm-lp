@@ -24,7 +24,7 @@ const filters = ["ELEIÇÕES", "PRÉ-CAMPANHA", "MARKETING POLÍTICO"];
 const Articles = () => {
   return (
     <section className="py-20 text-secondary md:py-28">
-      <div className="flex items-center justify-between gap-6 border-b border-black/15 pb-7">
+      <div className="lg:mt-92 flex items-center justify-between gap-6 border-b border-black/15 pb-7">
         <h2 className="max-w-xl text-2xl leading-tight font-bold sm:text-3xl md:text-[38px]">
           Artigos, análises e estratégias
           <br className="hidden sm:block" /> sobre comunicação política
@@ -44,7 +44,7 @@ const Articles = () => {
         {filters.map((filter, index) => (
           <span
             key={filter}
-            className={`rounded-full px-5 py-1.5 text-[10px] font-semibold tracking-[0.12em] ${
+            className={`rounded-full px-5 py-1.5 text-xs font-semibold tracking-[0.12em] ${
               index === 0
                 ? "bg-secondary text-green-system"
                 : "bg-[#dedede] text-secondary/65"
@@ -71,13 +71,13 @@ const Articles = () => {
               />
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/25 to-transparent" />
               <div className="absolute inset-x-0 bottom-0 p-5 text-white sm:p-6">
-                <span className="inline-flex rounded-full bg-green-system px-3 py-1 text-[9px] font-semibold tracking-wide text-secondary">
+                <span className="inline-flex rounded-full bg-green-system px-3 py-1 text-xs font-semibold tracking-wide text-secondary">
                   {article.category}
                 </span>
                 <h3 className="mt-3 text-lg leading-tight font-semibold sm:text-xl">
                   {article.title}
                 </h3>
-                <p className="mt-3 line-clamp-3 text-xs leading-relaxed text-white/80 sm:text-sm">
+                <p className="mt-3 line-clamp-3 text-sm leading-relaxed text-white/80">
                   {article.excerpt}
                 </p>
               </div>
