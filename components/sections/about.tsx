@@ -97,7 +97,7 @@ const About = () => {
       </div>
       <hr className="my-10 hidden md:block md:my-16" />
 
-      <div className="mt-16 flex flex-col items-center gap-2.5 md:mt-0 md:items-stretch md:gap-6 lg:flex-row lg:items-start lg:gap-10">
+      <div className="mt-16 mb-16 flex flex-col items-center gap-2.5 md:mt-0 md:items-stretch md:gap-6 lg:mb-0 lg:flex-row lg:items-start lg:gap-10">
         <div className="relative flex w-[72%] items-center justify-center rounded border border-[#1C1C1C] bg-linear-to-r from-[#171717] to-[#080808] p-4 md:w-full md:p-10 lg:min-h-125 lg:max-w-md">
           <div className="absolute -top-2.5 left-5 h-5 w-16 rounded bg-(--color-green) shadow-[0_0_2px_var(--color-green),0_0_8px_var(--color-green),0_0_20px_var(--color-green)] md:-top-4 md:left-10 md:h-9 md:w-28" />
           <div className="flex items-start h-full gap-4">

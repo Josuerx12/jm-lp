@@ -75,7 +75,7 @@ export const DiagnosisCta = () => {
         className="pointer-events-none absolute -top-25 -left-27 z-20 hidden h-auto w-55 rotate-4 lg:block xl:-left-32 xl:w-64"
       />
 
-      <div className="mx-auto w-full max-w-5xl rounded-[32px] bg-green-system px-6 py-10 text-center text-secondary sm:px-10 lg:rounded-[48px] lg:px-16 lg:py-14">
+      <div className="mx-auto mb-10 w-full max-w-5xl rounded-[32px] bg-green-system px-6 py-10 text-center text-secondary sm:px-10 lg:mb-0 lg:rounded-[48px] lg:px-16 lg:py-14">
         <h3 className="text-2xl leading-tight font-bold sm:text-3xl">
           Se você quer disputar de verdade,
           <br className="hidden sm:block" /> precisa começar antes.
